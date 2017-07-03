@@ -24,6 +24,10 @@ public class Movie {
         return this.title;
     }
 
+    public String toString() {
+        return "Title:" + this.title + "Genre:" + this.genre + "CurrentRanking:" + this.currentRanking;
+
+    }
     public String getGenre(){
         return this.genre;
     }

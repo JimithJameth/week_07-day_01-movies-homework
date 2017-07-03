@@ -18,7 +18,7 @@ public class MovieTest {
 
     @Before
     public void before() {
-        movie1 = new Movie ("2001 A Space Odessey","Sci fi",3);
+        movie1 = new Movie ("2001 A Space Odyssey","Sci fi",3);
         movie2 = new Movie ("Back To The Future 2","Adventure",2);
         movie3 = new Movie ("Star Wars","Sci fi",1);
 
@@ -26,7 +26,7 @@ public class MovieTest {
 
     @Test
     public void hasTitle() {
-        assertEquals("2001 A Space Odessey",movie1.getTitle());
+        assertEquals("2001 A Space Odyssey",movie1.getTitle());
     }
 
     @Test
@@ -55,5 +55,12 @@ public class MovieTest {
     public void setCurrentRanking(){
         movie1.setCurrentRanking(1);
         assertEquals(1,movie1.getCurrentRanking());
+    }
+
+    @Test
+    public void testToString() {
+        String result = "Title:2001 A Space Odyssey, Genre:Sci fi, CurrentRanking:3";
+        assertEquals(movie1.toString(),result);
+
     }
 }
