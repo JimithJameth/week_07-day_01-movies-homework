@@ -59,7 +59,7 @@ public class MovieTest {
 
     @Test
     public void testToString() {
-        String result = "Title:2001 A Space Odyssey, Genre:Sci fi, CurrentRanking:3";
+        String result = "Title:2001 A Space OdysseyGenre:Sci fiCurrentRanking:3";
         assertEquals(movie1.toString(),result);
 
     }
