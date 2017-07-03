@@ -5,4 +5,23 @@ package com.example.user.top10movies;
  */
 
 public class Ranking {
+
+    public Movie[] rank;
+
+
+    public Ranking(){
+        rank = new Movie[10];
+    }
+
+    public int getLength(){
+        int counter = 0;
+        for (Movie movie : rank){
+            if (movie != null) counter ++;
+        }
+        return counter;
+    }
+
 }
+
+
+
