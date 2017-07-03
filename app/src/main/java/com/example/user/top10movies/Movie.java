@@ -9,14 +9,14 @@ import java.util.ArrayList;
 public class Movie {
     String title;
     String genre;
-    int currentranking;
+    int currentRanking;
 
 
-    public Movie(String title, String genre, int currentranking) {
+    public Movie(String title, String genre, int currentRanking) {
 
         this.title = title;
         this.genre = genre;
-        this.currentranking = currentranking;
+        this.currentRanking = currentRanking;
 
     }
 
@@ -28,10 +28,19 @@ public class Movie {
         return this.genre;
     }
 
-    public int getCurrentranking(){
-        return this.currentranking;
+    public int getCurrentRanking(){
+        return this.currentRanking;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
 
+    public void setCurrentRanking(int currentRanking){
+        this.currentRanking = currentRanking;
+    }
 }
