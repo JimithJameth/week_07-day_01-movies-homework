@@ -14,14 +14,26 @@ public class MovieTest {
     Movie movie1;
     Movie movie2;
     Movie movie3;
-
+    Movie movie4;
+    Movie movie5;
+    Movie movie6;
+    Movie movie7;
+    Movie movie8;
+    Movie movie9;
+    Movie movie10;
 
     @Before
     public void before() {
         movie1 = new Movie ("2001 A Space Odyssey","Sci fi",3);
         movie2 = new Movie ("Back To The Future 2","Adventure",2);
         movie3 = new Movie ("Star Wars","Sci fi",1);
-
+        movie4 = new Movie ("Last Action Hero","Action",4);
+        movie5 = new Movie ("Big Trouble In Little China","Action",5);
+        movie6 = new Movie ("Rocky 4","Action",6);
+        movie7 = new Movie ("Ant Man","Action",7);
+        movie8 = new Movie ("Teenage Mutant Ninja Turtles","Action",8);
+        movie9 = new Movie ("Waynes World","Comedy",9);
+        movie10 = new Movie("Clerks","Comedy",10);
     }
 
     @Test
